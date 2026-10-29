@@ -63,5 +63,30 @@ button:hover {
     margin: 10px 0;
     background: #f8fafc;
     border-left: 5px solid #2563eb;
+
     border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    main {
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    button {
+        font-size: 14px;
+    }
 }
