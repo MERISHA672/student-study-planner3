@@ -26,3 +26,17 @@ function addTask() {
     taskInput.value = "";
     subjectInput.value = "";
 }
+function saveTasks() {
+    const tasks = document.getElementById("taskList").innerHTML;
+    localStorage.setItem("studyTasks", tasks);
+}
+
+function loadTasks() {
+    const savedTasks = localStorage.getItem("studyTasks");
+
+    if (savedTasks) {
+        document.getElementById("taskList").innerHTML = savedTasks;
+    }
+}
+
+window.onload = loadTasks;
